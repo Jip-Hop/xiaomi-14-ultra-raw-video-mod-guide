@@ -32,8 +32,8 @@ These are the main mods which are available for the X14U on Neoteric OS.
 - [ln2 (Low Noise)](https://t.me/c/2031778003/2/31504) - What does this do? How does it result in low noise?
 - [unbinned 2x](https://t.me/gcam14u/45064)
 - [unbinned 5x](https://t.me/gcam14u/2902) - What is this? Does it work?
-- [4k120fps (only main 24mm lens) and 8k30fps](https://t.me/gcam14u/46153) - ["What's this haze and screen division in 120 fps mode? Not in the footage. Part of the mod?"](https://t.me/gcam14u/46176)
-- [fullres](https://t.me/c/2031778003/2/19331) - What is difference with 120fps MotionCam MOD which enables 8k30fps raw? See [AIO_GeorgeMods_v2 readme](https://t.me/gcam14u/45844)
+- [4k120fps (only main 24mm lens) and 8k30fps](https://t.me/gcam14u/46153)
+- [fullres](https://t.me/c/2031778003/2/19331)
 - [aperture](https://t.me/c/2031778003/2/5107)
 - [brightness](https://t.me/gcam14u/19270)
 - [thermal](https://t.me/Xiaomi14Ultra_AOSP/8055)
@@ -60,9 +60,9 @@ Which mods can be combined? It's clear that the aperture, brightness and thermal
 
 These packs contain one more of the [main mods](#mods) in a convenient package.
 
-- AIO GeorgeMods v2: https://t.me/gcam14u/45844
-- Quick Tile APKs - NeotericOS: https://t.me/Xiaomi14Ultra_AOSP/9974
-- Floating aperture mod: https://t.me/gcam14u/15042
+1. AIO GeorgeMods v2: https://t.me/gcam14u/45844
+2. Quick Tile APKs - NeotericOS: https://t.me/Xiaomi14Ultra_AOSP/9974
+3. Floating aperture mod: https://t.me/gcam14u/15042
 
 ### DCG4 / DCG16
 |  |  |
@@ -70,7 +70,7 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 | Description | "Simply put, DCG works by blending two exposures captured simultaneously—one at a native low ISO (e.g., ISO 50) to preserve highlights, and another at a higher ISO (e.g., ISO 800) to enhance shadow details. This combination results in a well-balanced image with exceptional dynamic range, delivering a "ready-to-use" look straight out of the camera." [Source](https://www.youtube.com/watch?v=ZhE-Fp0345g). "Things to remember when using DCG. In DCG 4 minimum iso is 400 and 16 is 1600. Side note the displayed iso is actually half the actual iso that's set. So when I said dcg4 min iso is 400 on device you set 200 internally it sets 400. So DCG4: iso 200. DCG16: iso 800. Remember it's a ratio 4:1 16:1." - [Source](https://t.me/gcam14u/46897). https://youtu.be/f36q0F-ZtdI |
 | Supported (hidden) lenses | Only the main 1" sensor, but which (hidden) lens IDs to use??? |
 | Max res | 4096x2304 |
-| Max fps | 60? |
+| Max fps | 60 |
 | Horizontal crop | 1x |
 | Benefits | Higher dynamic range |
 | Downsides | Crops top and bottom of sensor. Less micro contrast?? |
@@ -80,7 +80,7 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 ### LN2
 |  |  |
 |---|---|
-| Description | TODO |
+| Description | LYT900 RAW10 LN2 MOD |
 | Supported (hidden) lenses | TODO |
 | Max res | TODO |
 | Max fps | TODO |
@@ -93,7 +93,8 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 ### Unbinned 2x / 5x
 |  |  |
 |---|---|
-| Description | TODO |
+| Description | This is supposed to enable "In Sensor Zoom", which crops into a smaller region of the sensor while still enabling 4k resolution. But how to make this work? I tried with the Quick Tile from the [Quick Tile mod pack](#packs) but the "4096x3072 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" and 30fps creates a black recording. Same for the RAW10 stream.
+The other 2 raw sensor streams cause Error popup |
 | Supported (hidden) lenses | TODO |
 | Max res | TODO |
 | Max fps | TODO |
@@ -106,28 +107,29 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 ### 4k120fps
 |  |  |
 |---|---|
-| Description | TODO |
+| Description | Unlocks 120fps framerate on the 3840x2160 RAW10 stream in "Full Sensor" under "Capture Resolution". |
 | Supported (hidden) lenses | TODO |
-| Max res | TODO |
-| Max fps | TODO |
+| Max res | 3840x2160 |
+| Max fps | 120 |
 | Horizontal crop | TODO |
-| Benefits | TODO |
-| Downsides | TODO |
-| Side effects | TODO |
-| Instructions | TODO |
+| Benefits | Footage can be slowed down in post |
+| Downsides | Max 10-bit |
+| Side effects | Enabling the 120fps mod seems to break all streams, except for the 3840x2160 RAW10 stream with 120fps selected. The real-time Android preview looks hazy. Additionally the real-time Android preview in 120fps mode has a strange line through the middle. Enabling this mod unlocks new streams, but none of them seem to be usable. 8192x6144 RAW10 with "Full Sensor" under "Capture Resolution" causes distorted image on top quarter. Rest is black. Tried at many different fps. Enabling remosaic doesn’t help. Same with 7680x4320 RAW10. |
+| Instructions | Enable the 120FPS Quick Tile from the [Quick Tile mod pack](#packs). Select the 3840x2160 RAW10 stream and choose "Full Sensor" under "Capture Resolution". Record some 120fps footage. Then disable the mod again by clicking the 120FPS Quick Tile in order to make the other streams (with higher resolutions, lower framerates and 14-bit) available again. |
 
 ### Fullres
 |  |  |
 |---|---|
-| Description | TODO |
+| Description | Supposed to unlock 50mp (on all lenses?) but so far I was not able to make this work. Tried on the main 1" sensor.  |
 | Supported (hidden) lenses | TODO |
 | Max res | TODO |
 | Max fps | TODO |
 | Horizontal crop | TODO |
 | Benefits | TODO |
 | Downsides | TODO |
-| Side effects | TODO |
-| Instructions | TODO |
+| Side effects | 8192x6144 raw10 full sensor image shown twice side by side in top quarter rest is black left side is reddish right blueish tried remosaic and different fps.
+7680x4320 raw10 full sensor similar as previous but even more distorted. 8192x4608 and 7680x4320 raw sensor full sensor 24fps Error popup. 8192x6144 raw sensor full sensor 24fps top quarter of image is white rest is black. |
+| Instructions | How to use this mod for raw video? What is difference with 120fps MotionCam MOD which is supposed to enables 8k30fps raw? See [AIO_GeorgeMods_v2 readme](https://t.me/gcam14u/45844) |
 
 ### Aperture
 |  |  |
@@ -171,8 +173,18 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 ## MotionCam Setup
 
 - Which (hidden) lense IDs to use? Which ones to ignore?
-- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281)
+- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the 4k120fps mod. Then 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
 - Increase "Memory usage" from default 1024Mb????
+
+## Recording Modes
+
+### No Mods Enabled
+
+#### 0/2. 24mm (main 1" sensor)
+- "4096x3072 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 30fps: use this for max vertical resolution
+- "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 60fps: use this for high fps with reduced vertical resolution
+- "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution": appears not to work, crashes the feed: “Error”, no use selecting this one. Also tried some other Capture Resolution with same results.
+- RAW10: does not work (recording is black)
 
 ## Camera Grip
 
