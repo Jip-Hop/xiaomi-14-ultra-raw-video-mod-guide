@@ -45,9 +45,9 @@ Which mods can be combined? It's clear that the aperture, brightness and thermal
 
 |             | dcg4 | dcg16 | ln2 | unbinned 2x | unbinned 5x | 4k120fps | fullres | aperture | brightness | thermal |
 | ----------- | ---- | ----- | --- | ----------- | ----------- | -------- | ------- | -------- | ---------- | ------- |
-| dcg4        | ◻️   | ❌    | ❔  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
-| dcg16       | ❌   | ◻️    | ❔  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
-| ln2         | ❔   | ❔    | ◻️  | ❔          | ❔          | ❔       | ❔      | ✅       | ✅         | ✅      |
+| dcg4        | ◻️   | ❌    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
+| dcg16       | ❌   | ◻️    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
+| ln2         | ❌   | ❌    | ◻️  | ❔          | ❔          | ❔       | ❔      | ✅       | ✅         | ✅      |
 | unbinned 2x | ❔   | ❔    | ❔  | ◻️          | ❌          | ❔       | ❔      | ✅       | ✅         | ✅      |
 | unbinned 5x | ❔   | ❔    | ❔  | ❌          | ◻️          | ❔       | ❔      | ✅       | ✅         | ✅      |
 | 4k120fps    | ❔   | ❔    | ❔  | ❔          | ❔          | ◻️       | ❔      | ✅       | ✅         | ✅      |
