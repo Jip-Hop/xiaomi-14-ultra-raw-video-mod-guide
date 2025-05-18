@@ -174,7 +174,7 @@ The other 2 raw sensor streams cause Error popup |
 
 - Which (hidden) lense IDs to use? Which ones to ignore?
 - Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the RAW10 This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
-- Increase "Memory usage" from default 1024Mb????
+- Increase "Memory usage" from default 1024Mb???? Should be no need unless you use buffer recordings.
 
 ## Recording Modes
 
