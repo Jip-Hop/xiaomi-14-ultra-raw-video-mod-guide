@@ -48,10 +48,10 @@ Which mods can be combined? It's clear that the aperture, brightness and thermal
 | dcg4        | ◻️   | ❌    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
 | dcg16       | ❌   | ◻️    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
 | ln2         | ❌   | ❌    | ◻️  | ❔          | ❔          | ❔       | ❔      | ✅       | ✅         | ✅      |
-| unbinned 2x | ❔   | ❔    | ❔  | ◻️          | ❌          | ❔       | ❔      | ✅       | ✅         | ✅      |
+| unbinned 2x | ❔   | ❔    | ❔  | ◻️          | ❌          | ❔       | ✅      | ✅       | ✅         | ✅      |
 | unbinned 5x | ❔   | ❔    | ❔  | ❌          | ◻️          | ❔       | ❔      | ✅       | ✅         | ✅      |
 | 4k120fps    | ❔   | ❔    | ❔  | ❔          | ❔          | ◻️       | ❔      | ✅       | ✅         | ✅      |
-| fullres     | ❌   | ❌    | ❔  | ❔          | ❔          | ❔       | ◻️      | ✅       | ✅         | ✅      |
+| fullres     | ❌   | ❌    | ❔  | ✅          | ❔          | ❔       | ◻️      | ✅       | ✅         | ✅      |
 | aperture    | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ◻️       | ✅         | ✅      |
 | brightness  | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ✅       | ◻️         | ✅      |
 | thermal     | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ✅       | ✅         | ◻️      |
@@ -102,7 +102,7 @@ The other 2 raw sensor streams cause Error popup |
 | Benefits | TODO |
 | Downsides | TODO |
 | Side effects | TODO |
-| Instructions | TODO |
+| Instructions | This mod requires you to enable the fullres Quick Tile from the [Quick Tile mod pack](#packs) first. Then enable the unbinned 2x Quick Tile. Then select the "4096x3072 (RAW_SENSOR)" or "4096x3072 (RAW10)" stream with 3840x2160 (16:9) under "Capture Resolution". |
 
 ### 4k120fps
 |  |  |
@@ -128,7 +128,7 @@ The other 2 raw sensor streams cause Error popup |
 | Benefits | TODO |
 | Downsides | TODO |
 | Side effects | 8192x6144 raw10 full sensor image shown twice side by side in top quarter rest is black left side is reddish right blueish tried remosaic and different fps.
-7680x4320 raw10 full sensor similar as previous but even more distorted. 8192x4608 and 7680x4320 raw sensor full sensor 24fps Error popup. 8192x6144 raw sensor full sensor 24fps top quarter of image is white rest is black. |
+7680x4320 raw10 full sensor similar as previous but even more distorted. 8192x4608 and 7680x4320 raw sensor full sensor 24fps Error popup. 8192x6144 raw sensor full sensor 24fps top quarter of image is white rest is black. Enabling the fullres mod seems to fix the 4096x3072 (RAW10) stream... |
 | Instructions | How to use this mod for raw video? What is difference with 120fps MotionCam MOD which is supposed to enables 8k30fps raw? See [AIO_GeorgeMods_v2 readme](https://t.me/gcam14u/45844) |
 
 ### Aperture
@@ -173,7 +173,7 @@ The other 2 raw sensor streams cause Error popup |
 ## MotionCam Setup
 
 - Which (hidden) lense IDs to use? Which ones to ignore?
-- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the 4k120fps mod. Then 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
+- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the RAW10 This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
 - Increase "Memory usage" from default 1024Mb????
 
 ## Recording Modes
@@ -184,7 +184,7 @@ The other 2 raw sensor streams cause Error popup |
 - "4096x3072 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 30fps: use this for max vertical resolution
 - "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 60fps: use this for high fps with reduced vertical resolution
 - "4096x1840 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution": appears not to work, crashes the feed: “Error”, no use selecting this one. Also tried some other Capture Resolution with same results.
-- RAW10: does not work (recording is black)
+- "4096x3072 (RAW10)": does not work (recording is black) unless using fullres mod or 4k120fps mod.
 
 ## Camera Grip
 
