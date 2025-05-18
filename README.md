@@ -75,7 +75,7 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 | Benefits | Higher dynamic range |
 | Downsides | Crops top and bottom of sensor. Less micro contrast?? |
 | Side effects | Black bars on top/bottom when using the "4096x3072 (RAW_SENSOR)" stream. This mod only supports up to 16:9 aspect ratio. |
-| Instructions | Adjust the "Capture resolution" to stay within 4096x2304 or switch to the "4096x2304 (RAW_SENSOR)" stream. |
+| Instructions | Adjust the "Capture resolution" to stay within 4096x2304 or switch to the "4096x2304 (RAW_SENSOR)" stream. Do not go lower than the min. ISO (DCG4 ISO 200, DCG16 ISO 800) or it will ruin your footage. |
 
 ### LN2
 |  |  |
