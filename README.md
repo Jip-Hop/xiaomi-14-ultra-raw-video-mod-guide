@@ -183,7 +183,7 @@ The other 2 raw sensor streams cause Error popup |
 #### 0/2. 24mm (main 1" sensor)
 - "4096x3072 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 30fps: use this for max vertical resolution
 - "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 60fps: use this for high fps with reduced vertical resolution
-- "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution": appears not to work, crashes the feed: “Error”, no use selecting this one. Also tried some other Capture Resolution with same results.
+- "4096x1840 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution": appears not to work, crashes the feed: “Error”, no use selecting this one. Also tried some other Capture Resolution with same results.
 - RAW10: does not work (recording is black)
 
 ## Camera Grip
