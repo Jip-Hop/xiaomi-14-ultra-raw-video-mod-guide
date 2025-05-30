@@ -58,7 +58,7 @@ Which mods can be combined? It's clear that the aperture, brightness and thermal
 
 ### Packs
 
-These packs contain one more of the [main mods](#mods) in a convenient package.
+These packs contain one or more of the [main mods](#mods) in a convenient package.
 
 1. AIO GeorgeMods v2: https://t.me/gcam14u/45844
 2. Quick Tile APKs - NeotericOS: https://t.me/Xiaomi14Ultra_AOSP/9974
