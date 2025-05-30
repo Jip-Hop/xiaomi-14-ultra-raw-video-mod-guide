@@ -85,7 +85,7 @@ These packs contain one more of the [main mods](#mods) in a convenient package.
 | Max res | TODO |
 | Max fps | TODO |
 | Horizontal crop | TODO |
-| Benefits | TODO |
+| Benefits | +0.5ev of dynamic range due to less noise |
 | Downsides | TODO |
 | Side effects | TODO |
 | Instructions | TODO |
