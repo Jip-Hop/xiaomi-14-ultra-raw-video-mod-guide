@@ -41,17 +41,17 @@ These are the main mods which are available for the X14U on Neoteric OS.
 
 ### Compatibility
 
-Which mods can be combined? It's clear that the aperture, brightness and thermal mods can be combined with any mod. Some mods are clearly mutually exclusive, such as DCG4/DCG16 and unbinned 2x v.s. unbinned 5x. [About the fullres mod I found that it can't be combined with DCG mods](https://t.me/Xiaomi14Ultra_AOSP/9245). Any input about the remaining ❔ in the chart is greatly appreciated!
+Any input about the remaining ❔ in the chart is greatly appreciated!
 
 |             | dcg4 | dcg16 | ln2 | unbinned 2x | unbinned 5x | 4k120fps | fullres | aperture | brightness | thermal |
 | ----------- | ---- | ----- | --- | ----------- | ----------- | -------- | ------- | -------- | ---------- | ------- |
-| dcg4        | ◻️   | ❌    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
-| dcg16       | ❌   | ◻️    | ❌  | ❔          | ❔          | ❔       | ❌      | ✅       | ✅         | ✅      |
-| ln2         | ❌   | ❌    | ◻️  | ❔          | ❔          | ❔       | ❔      | ✅       | ✅         | ✅      |
-| unbinned 2x | ❔   | ❔    | ❔  | ◻️          | ❌          | ❔       | ✅      | ✅       | ✅         | ✅      |
-| unbinned 5x | ❔   | ❔    | ❔  | ❌          | ◻️          | ❔       | ❔      | ✅       | ✅         | ✅      |
-| 4k120fps    | ❔   | ❔    | ❔  | ❔          | ❔          | ◻️       | ❔      | ✅       | ✅         | ✅      |
-| fullres     | ❌   | ❌    | ❔  | ✅          | ❔          | ❔       | ◻️      | ✅       | ✅         | ✅      |
+| dcg4        | ◻️   | ❌    | ❌  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
+| dcg16       | ❌   | ◻️    | ❌  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
+| ln2         | ❌   | ❌    | ◻️  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
+| unbinned 2x | ❌   | ❌    | ❌  | ◻️          | ❌          | ❌       | ✅      | ✅       | ✅         | ✅      |
+| unbinned 5x | ❌   | ❌    | ❌  | ❌          | ◻️          | ❌       | ❔      | ✅       | ✅         | ✅      |
+| 4k120fps    | ❌   | ❌    | ❌  | ❌          | ❌          | ◻️       | ❌      | ✅       | ✅         | ✅      |
+| fullres     | ❌   | ❌    | ❌  | ✅          | ❔          | ❌       | ◻️      | ✅       | ✅         | ✅      |
 | aperture    | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ◻️       | ✅         | ✅      |
 | brightness  | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ✅       | ◻️         | ✅      |
 | thermal     | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ✅       | ✅         | ◻️      |
