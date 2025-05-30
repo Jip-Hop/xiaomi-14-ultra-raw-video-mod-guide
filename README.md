@@ -48,9 +48,9 @@ Any input about the remaining ❔ in the chart is greatly appreciated!
 | dcg4        | ◻️   | ❌    | ❌  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
 | dcg16       | ❌   | ◻️    | ❌  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
 | ln2         | ❌   | ❌    | ◻️  | ❌          | ❌          | ❌       | ❌      | ✅       | ✅         | ✅      |
-| unbinned 2x | ❌   | ❌    | ❌  | ◻️          | ❌          | ❌       | ✅      | ✅       | ✅         | ✅      |
+| unbinned 2x | ❌   | ❌    | ❌  | ◻️          | ❌          | ✅       | ✅      | ✅       | ✅         | ✅      |
 | unbinned 5x | ❌   | ❌    | ❌  | ❌          | ◻️          | ❌       | ❔      | ✅       | ✅         | ✅      |
-| 4k120fps    | ❌   | ❌    | ❌  | ❌          | ❌          | ◻️       | ❌      | ✅       | ✅         | ✅      |
+| 4k120fps    | ❌   | ❌    | ❌  | ✅          | ❌          | ◻️       | ❌      | ✅       | ✅         | ✅      |
 | fullres     | ❌   | ❌    | ❌  | ✅          | ❔          | ❌       | ◻️      | ✅       | ✅         | ✅      |
 | aperture    | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ◻️       | ✅         | ✅      |
 | brightness  | ✅   | ✅    | ✅  | ✅          | ✅          | ✅       | ✅      | ✅       | ◻️         | ✅      |
@@ -93,7 +93,7 @@ Apps to install/manage/toggle multiple mods.
 | Max fps | 30 |
 | Horizontal crop | TODO |
 | Benefits | +0.5ev of dynamic range due to less noise |
-| Downsides | TODO |
+| Downsides | Max 10-bit? |
 | Side effects | TODO |
 | Instructions | "LN2 is only in the 4:3 30fps mode." [Source](https://t.me/gcam14u/40902) |
 
@@ -109,34 +109,36 @@ The other 2 raw sensor streams cause Error popup |
 | Benefits | TODO |
 | Downsides | TODO |
 | Side effects | TODO |
-| Instructions | This mod requires you to enable the fullres Quick Tile from the [Quick Tile mod pack](#packs) first. Then enable the unbinned 2x Quick Tile. Then select the "4096x3072 (RAW_SENSOR)" or "4096x3072 (RAW10)" stream with 3840x2160 (16:9) under "Capture Resolution". |
+| Instructions | This mod requires you to enable the fullres Quick Tile from the [Quick Tile mod pack](#packs) first. Then enable the unbinned 2x Quick Tile. Then select the "4096x3072 (RAW_SENSOR)" or "4096x3072 (RAW10)" stream with 3840x2160 (16:9) under "Capture Resolution". Also works with "4096x3072 (RAW_SENSOR)" and "Full Sensor" under "Capture Resolution"  |
 
 ### 4k120fps
 |  |  |
 |---|---|
-| Description | Unlocks 120fps framerate on the 3840x2160 RAW10 stream in "Full Sensor" under "Capture Resolution". |
+| Description | Unlocks 120fps framerate on the 3840x2160 RAW10 stream in "Full Sensor" under "Capture Resolution" and 8k30fps on the 8192x6144 RAW10 stream with "Full Sensor" under "Capture Resolution". Main sensor only! |
 | Supported (hidden) lenses | TODO |
-| Max res | 3840x2160 |
-| Max fps | 120 |
+| Max res | 3840x2160 or 8192x6144 |
+| Max fps | 4k120fps or 8k30fps  |
 | Horizontal crop | TODO |
-| Benefits | Footage can be slowed down in post |
+| Benefits | Footage can be slowed down in post or more detail can be recorded. It's also possible to record a 3840 pixels wide crop of the 8k stream, for a zoomed in recording. TODO: how does this compare to ISZ? |
 | Downsides | Max 10-bit |
-| Side effects | Enabling the 120fps mod seems to break all streams, except for the 3840x2160 RAW10 stream with 120fps selected. The real-time Android preview looks hazy. Additionally the real-time Android preview in 120fps mode has a strange line through the middle. Enabling this mod unlocks new streams, but none of them seem to be usable. 8192x6144 RAW10 with "Full Sensor" under "Capture Resolution" causes distorted image on top quarter. Rest is black. Tried at many different fps. Enabling remosaic doesn’t help. Same with 7680x4320 RAW10. |
-| Instructions | Enable the 120FPS Quick Tile from the [Quick Tile mod pack](#packs). Select the 3840x2160 RAW10 stream and choose "Full Sensor" under "Capture Resolution". Record some 120fps footage. Then disable the mod again by clicking the 120FPS Quick Tile in order to make the other streams (with higher resolutions, lower framerates and 14-bit) available again. |
+| Side effects | Enabling the 120fps mod seems to break most streams on the main sensor. The 3840x2160 RAW10 stream with 120fps selected. The real-time Android preview looks hazy. Additionally the real-time Android preview in 120fps mode has a strange line through the middle. Enabling this mod unlocks new streams, but none of them seem to be usable. The 2x ISZ mod is compatible with this mod! |
+| Instructions | Enable the 120FPS Quick Tile from the [Quick Tile mod pack](#packs). Select the 3840x2160 RAW10 stream and choose "Full Sensor" under "Capture Resolution" and set framerate to 120fps. Or choose the 8192x6144 RAW10 with "Full Sensor" under "Capture Resolution" and set to framerate to 30fps to record in 8k. Record some footage. Then disable the mod again by clicking the 120FPS Quick Tile in order to make the other streams (lower framerates and 14-bit) available again. |
+The 7680x4320 RAW10 works too.
+
+TODO: further compare 4k120fps mod with fullres mod.
 
 ### Fullres
 |  |  |
 |---|---|
-| Description | Supposed to unlock 50mp (on all lenses?) but so far I was not able to make this work. Tried on the main 1" sensor.  |
+| Description | Supposed to unlock 50mp (on all lenses?) but so far I was able to make this work only on the main 1" sensor. |
 | Supported (hidden) lenses | TODO |
-| Max res | TODO |
-| Max fps | TODO |
+| Max res | 8192x6144 |
+| Max fps | 30 |
 | Horizontal crop | TODO |
 | Benefits | TODO |
 | Downsides | TODO |
-| Side effects | 8192x6144 raw10 full sensor image shown twice side by side in top quarter rest is black left side is reddish right blueish tried remosaic and different fps.
-7680x4320 raw10 full sensor similar as previous but even more distorted. 8192x4608 and 7680x4320 raw sensor full sensor 24fps Error popup. 8192x6144 raw sensor full sensor 24fps top quarter of image is white rest is black. Enabling the fullres mod seems to fix the 4096x3072 (RAW10) stream... |
-| Instructions | How to use this mod for raw video? What is difference with 120fps MotionCam MOD which is supposed to enables 8k30fps raw? See [AIO_GeorgeMods_v2 readme](https://t.me/gcam14u/45844) |
+| Side effects | Unlocks additional streams which are unusable. 7680x4320 raw10 full sensor distorted. 8192x4608 and 7680x4320 raw sensor full sensor 24fps Error popup. 8192x6144 raw sensor full sensor 24fps top quarter of image is white rest is black. Enabling the fullres mod fixes the 4096x3072 (RAW10) stream. |
+| Instructions | Was able to record 8192x6144 in RAW10 mode @ 30fps with "Full Sensor" under "Capture Resolution". Autofocus seems to hunt... What is difference with 120fps MotionCam MOD which enables 8k30fps raw? See [AIO_GeorgeMods_v2 readme](https://t.me/gcam14u/45844). Seems the Android preview is less distorted with fullres mod compared to 4k120fps mod? |
 
 ### Aperture
 |  |  |
