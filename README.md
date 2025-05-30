@@ -134,15 +134,15 @@ The other 2 raw sensor streams cause Error popup |
 ### Aperture
 |  |  |
 |---|---|
-| Description | TODO |
-| Supported (hidden) lenses | TODO |
-| Max res | TODO |
-| Max fps | TODO |
-| Horizontal crop | TODO |
-| Benefits | TODO |
-| Downsides | TODO |
-| Side effects | TODO |
-| Instructions | TODO |
+| Description | Adjustable settings: F1.6, F2.8, F3.2, F4.0. When none of the tiles are active F2.0 is used. |
+| Supported (hidden) lenses | Any 24mm lens ID since only the main 1" sensor has aperture blades. |
+| Max res | N/A |
+| Max fps | N/A |
+| Horizontal crop | N/A |
+| Benefits | Control over exposure and depth of field. |
+| Downsides | Aperture exif info will not match with the reality, it's overriding it at driver level |
+| Side effects | Can't change aperture while recording. |
+| Instructions | When using the aperture tiles from the Quick Tile APKs mod pack you need to manually disable one aperture tile before enabling the desired aperture tile. They are mutually exclusive.  |
 
 ### Brightness
 |  |  |
