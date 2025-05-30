@@ -29,7 +29,7 @@ These are the main mods which are available for the X14U on Neoteric OS.
 
 - [dcg4](https://t.me/gcam14u/2124)
 - [dcg16](https://t.me/c/2031778003/2/29971)
-- [ln2 (Low Noise)](https://t.me/c/2031778003/2/31504) - What does this do? How does it result in low noise?
+- [ln2 (Low Noise)](https://t.me/c/2031778003/2/31504)
 - [unbinned 2x](https://t.me/gcam14u/45064)
 - [unbinned 5x](https://t.me/gcam14u/2902) - What is this? Does it work?
 - [4k120fps (only main 24mm lens) and 8k30fps](https://t.me/gcam14u/46153)
@@ -80,15 +80,15 @@ These packs contain one or more of the [main mods](#mods) in a convenient packag
 ### LN2
 |  |  |
 |---|---|
-| Description | LYT900 RAW10 LN2 MOD |
-| Supported (hidden) lenses | TODO |
+| Description | LYT900 RAW10 LN2 MOD. "The way LN2 works is an implementation of a new architecture of the CMOS sensor technology. Instead of applying photodiodes and pixel transistors on the same substrate and plane, they are now stacked one on top of the other, thus expanding dynamic range, allowing more light and reducing noise without affecting the overall performance of the phone." - [Source](https://www.gsmarena.com/sony_xperia_1_v_design_revealed_on_billboards-news-58409.php) |
+| Supported (hidden) lenses | Only the main 1" sensor, but which (hidden) lens IDs to use??? |
 | Max res | TODO |
-| Max fps | TODO |
+| Max fps | 30 |
 | Horizontal crop | TODO |
 | Benefits | +0.5ev of dynamic range due to less noise |
 | Downsides | TODO |
 | Side effects | TODO |
-| Instructions | TODO |
+| Instructions | "LN2 is only in the 4:3 30fps mode." [Source](https://t.me/gcam14u/40902) |
 
 ### Unbinned 2x / 5x
 |  |  |
@@ -173,7 +173,7 @@ The other 2 raw sensor streams cause Error popup |
 ## MotionCam Setup
 
 - Which (hidden) lense IDs to use? Which ones to ignore?
-- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the RAW10 This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
+- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works. Or with LN2 enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works at 30fps. This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
 - Increase "Memory usage" from default 1024Mb???? Should be no need unless you use buffer recordings.
 
 ## Recording Modes
