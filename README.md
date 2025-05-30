@@ -64,6 +64,13 @@ These packs contain one or more of the [main mods](#mods) in a convenient packag
 2. Quick Tile APKs - NeotericOS: https://t.me/Xiaomi14Ultra_AOSP/9974
 3. Floating aperture mod: https://t.me/gcam14u/15042
 
+
+### Mod Managers
+
+Apps to install/manage/toggle multiple mods.
+
+1. [Tile Mod Manager V3.2.apk](https://discord.com/channels/980884979955421255/980919883481096232/1375569085127196712)
+
 ### DCG4 / DCG16
 |  |  |
 |---|---|
