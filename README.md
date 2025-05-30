@@ -189,3 +189,6 @@ The other 2 raw sensor streams cause Error popup |
 ## Camera Grip
 
 The X14U Professional Photography Kit allows you to attach 67mm filters in front of the lenses of the phone. When using Neoteric OS not all features of the camera grip are available. The only button which works with MotionCam is the shutter button. A full shutter press will start/stop raw video recording.
+
+## Wish List
+- Aperture control from inside the MotionCam App. "Photon developer made a build that triggers aperture. No root or modding involved." - [Source](https://discord.com/channels/980884979955421255/981049638079582208/1331710965364031518). [Photon](https://github.com/eszdman/PhotonCamera).
