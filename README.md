@@ -21,7 +21,7 @@ Most of the development and discussion of MotionCam and related mods for the X14
 
 ## ROM
 
-To use this guide you must unlock the bootloader, flash Neoteric OS and root the X14U. [Instructions are provided on the XDA forum](https://xdaforums.com/t/shared-rom-a15-neoteric-os-for-xiaomi-14-ultra-aurora-03-26-2025.4710626/page-3#post-90096468).
+To use this guide you must unlock the bootloader, flash Neoteric OS and root the X14U. [Instructions are provided on the XDA forum](https://xdaforums.com/t/shared-rom-a15-neoteric-os-for-xiaomi-14-ultra-aurora-03-26-2025.4710626/page-3#post-90096468). To make the mods work you need to enable "Global namespace mode" in the APatch settings.
 
 ## Mods
 
