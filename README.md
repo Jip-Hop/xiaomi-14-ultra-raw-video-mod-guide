@@ -197,7 +197,15 @@ TODO: further compare 4k120fps mod with fullres mod.
 
 ## Camera Grip
 
-The X14U Professional Photography Kit allows you to attach 67mm filters in front of the lenses of the phone. When using Neoteric OS not all features of the camera grip are available. The only button which works with MotionCam is the shutter button. A full shutter press will start/stop raw video recording.
+The X14U Professional Photography Kit allows you to attach 67mm filters in front of the lenses of the phone. When using Neoteric OS not all features of the camera grip are available. The only button which works with MotionCam is the shutter button. A full shutter press will start/stop raw video recording. You can NOT use an SSD through the USB-C port of the Camera Grip. So recording straight to SSD is impossible when using the grip. See the [Offloading](#offloading-footage-with-foldersync) section for an alternative.
+
+## Offloading footage with FolderSync
+
+While you can record straight to an SSD with MotionCam, this makes the phone more bulky. Accidentally disconnecting the SSD during recording becomes a risk and additionally it'll (probably) use more battery power to have the SSD connected during recording. An alternative is to record to the internal storage and offload all recordings when connecting the SSD. A handy app for this is [FolderSync](https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.lite).
+
+Install and open FolderSync and give it the appropriate permissions. Create a new folderPair and select the "To right folder" sync type. For the "Left account" choose "SD CARD" and select the "/storage/emulated/0/Documents/MotionCam/" folder. For the "Right account" choose "SD CARD" and click "Select folder". Now tap on the SD card icon at the op left and choose the name of your external SSD (ensure it has been formatted as ExFAT before). Then create a new folder by tapping the folder icon with a plus on the bottom right. Name the folder "MotionCam" and select it. and select the "/mnt/media_rw/*****/MotionCam/" folder. Now save the folderPair and click "Sync options". Scroll down a bit until you find the "One-way sync options". Check "Move files to target folder (source folder will be come empty)".
+
+The setup is now complete. You can trigger this sync manually after connecting your SSD. Once complete the internal storage of your phone should be freed and you can continue recording again. Don't forget to safely eject the SSD.
 
 ## Wish List
 - Aperture control from inside the MotionCam App. "Photon developer made a build that triggers aperture. No root or modding involved." - [Source](https://discord.com/channels/980884979955421255/981049638079582208/1331710965364031518). [Photon](https://github.com/eszdman/PhotonCamera). [Development discussion](https://t.me/c/2031778003/2/36517). [PhotonCamera-0.919690-debug.apk](https://t.me/gcam14u/48429) I confirmed this indeed sets F1.6. Apparently [aperture control works on Mc24pro too](https://t.me/c/2031778003/2/36475).
