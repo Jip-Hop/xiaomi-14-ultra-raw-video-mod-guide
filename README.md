@@ -208,4 +208,4 @@ Install and open FolderSync and give it the appropriate permissions. Create a ne
 The setup is now complete. You can trigger this sync manually after connecting your SSD. Once complete the internal storage of your phone should be freed and you can continue recording again. Don't forget to safely eject the SSD.
 
 ## Wish List
-- Aperture control from inside the MotionCam App. "Photon developer made a build that triggers aperture. No root or modding involved." - [Source](https://discord.com/channels/980884979955421255/981049638079582208/1331710965364031518). [Photon](https://github.com/eszdman/PhotonCamera). [Development discussion](https://t.me/c/2031778003/2/36517). [PhotonCamera-0.919690-debug.apk](https://t.me/gcam14u/48429) I confirmed this indeed sets F1.6. Apparently [aperture control works on Mc24pro too](https://t.me/c/2031778003/2/36475).
+- Aperture control from inside the MotionCam App. [MVP example](https://github.com/Jip-Hop/camera-samples/).
