@@ -74,15 +74,15 @@ Apps to install/manage/toggle multiple mods.
 ### DCG4 / DCG16
 |  |  |
 |---|---|
-| Description | "Simply put, DCG works by blending two exposures captured simultaneously—one at a native low ISO (e.g., ISO 50) to preserve highlights, and another at a higher ISO (e.g., ISO 800) to enhance shadow details. This combination results in a well-balanced image with exceptional dynamic range, delivering a "ready-to-use" look straight out of the camera." [Source](https://www.youtube.com/watch?v=ZhE-Fp0345g). "Things to remember when using DCG. In DCG 4 minimum iso is 400 and 16 is 1600. Side note the displayed iso is actually half the actual iso that's set. So when I said dcg4 min iso is 400 on device you set 200 internally it sets 400. So DCG4: iso 200. DCG16: iso 800. Remember it's a ratio 4:1 16:1." - [Source](https://t.me/gcam14u/46897). "One more clarification about DCG and why you don’t see gains past ISO 200: When the ISO is set to 50, the DCG mode uses 50 with 800 merged. When the ISO is set to 200 (the maximum), it uses 200 with 3200. After ISO 200, there are no further adjustments because the system has reached its maximum capacity for gains." [Source](https://discord.com/channels/980884979955421255/980919883481096232/1331287132832006257). https://youtu.be/f36q0F-ZtdI |
-| Supported (hidden) lenses | Only the main 1" sensor, but which (hidden) lens IDs to use??? |
+| Description | "Simply put, DCG works by blending two exposures captured simultaneously—one at a native low ISO (e.g., ISO 50) to preserve highlights, and another at a higher ISO (e.g., ISO 800) to enhance shadow details. This combination results in a well-balanced image with exceptional dynamic range, delivering a "ready-to-use" look straight out of the camera." [Source](https://www.youtube.com/watch?v=ZhE-Fp0345g). When using DCG16 mod: "One more clarification about DCG and why you don’t see gains past ISO 200: When the ISO is set to 50, the DCG mode uses 50 with 800 merged. When the ISO is set to 200 (the maximum), it uses 200 with 3200. After ISO 200, there are no further adjustments because the system has reached its maximum capacity for gains." [Source](https://discord.com/channels/980884979955421255/980919883481096232/1331287132832006257). https://youtu.be/f36q0F-ZtdI |
+| Supported (hidden) lenses | Only the main 1" sensor. Use lens ID "2. 24mm". |
 | Max res | 4096x2304 |
 | Max fps | 60 |
 | Horizontal crop | 1x |
-| Benefits | Higher dynamic range. Beneficial in bringing back the highlights when you want shadows from higher ISO. |
-| Downsides | Crops top and bottom of sensor. Less micro contrast?? |
-| Side effects | Black bars on top/bottom when using the "4096x3072 (RAW_SENSOR)" stream. This mod only supports up to 16:9 aspect ratio. |
-| Instructions | Adjust the "Capture resolution" to stay within 4096x2304 or switch to the "4096x2304 (RAW_SENSOR)" stream. Do not go lower than the min. ISO (DCG4 ISO 200, DCG16 ISO 800) or it will ruin your footage. This advice applies to the old DCG lib. Apparently there's also a new DCG lib for which this doesn't apply. Which one is used in the DCG16-Xrite (16-9).apk from Quick Tile APKs - NeotericOS?|
+| Benefits | Higher dynamic range. Beneficial in preserving the highlights when you want shadows from higher ISO. |
+| Downsides | Crops top and bottom of sensor (max 16:9 aspect ratio). |
+| Side effects | Sensor Clipping warnings stop working (both in Android Preview as well as Direct Preview) so you must rely on the histogram. Breaks the "4096x3072 (RAW_SENSOR)" stream with "Full Sensor" under "Capture Resolution". Black bars on bottom when using the "4096x3072 (RAW_SENSOR)" stream with "Sensor Width (16:9)" under "Capture Resolution". |
+| Instructions | Enable the DCG16 mod and switch to the "4096x2304 (RAW_SENSOR)" stream with "Full Sensor" under "Capture Resolution". Adjust ISO between 50 and 200 for proper exposure. |
 
 ### LN2
 |  |  |
