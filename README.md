@@ -87,15 +87,15 @@ Apps to install/manage/toggle multiple mods.
 ### LN2
 |  |  |
 |---|---|
-| Description | LYT900 RAW10 LN2 MOD. "The way LN2 works is an implementation of a new architecture of the CMOS sensor technology. Instead of applying photodiodes and pixel transistors on the same substrate and plane, they are now stacked one on top of the other, thus expanding dynamic range, allowing more light and reducing noise without affecting the overall performance of the phone." - [Source](https://www.gsmarena.com/sony_xperia_1_v_design_revealed_on_billboards-news-58409.php) |
-| Supported (hidden) lenses | Only the main 1" sensor, but which (hidden) lens IDs to use??? |
-| Max res | TODO |
+| Description | LYT900 RAW10 LN2 MOD. This mod is most useful for Gcam users, since the merge methods available there require 10-bit raw data. For MotionCam Ln2 mode does not give the highest quality, but it can be useful to produce the smallest RAW files. "The way LN2 works is an implementation of a new architecture of the CMOS sensor technology. Instead of applying photodiodes and pixel transistors on the same substrate and plane, they are now stacked one on top of the other, thus expanding dynamic range, allowing more light and reducing noise without affecting the overall performance of the phone." - [Source](https://www.gsmarena.com/sony_xperia_1_v_design_revealed_on_billboards-news-58409.php) |
+| Supported (hidden) lenses | Only the main 1" sensor. Use lens ID "2. 24mm". |
+| Max res | 4096x3072 |
 | Max fps | 30 |
-| Horizontal crop | TODO |
-| Benefits | +0.5ev of dynamic range due to less noise |
-| Downsides | Max 10-bit? |
-| Side effects | TODO |
-| Instructions | "LN2 is only in the 4:3 30fps mode." [Source](https://t.me/gcam14u/40902) |
+| Horizontal crop | 1x |
+| Benefits | +0.5ev of dynamic range due to less noise (compared to regular 10-bit raw). Due to less noise the lossless compression algorithm will produce even smaller file sizes. |
+| Downsides | Max 10-bit |
+| Side effects | Breaks all 14-bit RAW_SENSOR streams. Disable the LN2 mod to use those again. |
+| Instructions | Enable the LN2 mod and switch to the "4096x3072 (RAW10)" stream with "Full Sensor" under "Capture Resolution". "LN2 is only in the 4:3 30fps mode." [Source](https://t.me/gcam14u/40902) |
 
 ### Unbinned 2x / 5x
 |  |  |
@@ -182,7 +182,8 @@ TODO: further compare 4k120fps mod with fullres mod.
 ## MotionCam Setup
 
 - Which (hidden) lense IDs to use? Which ones to ignore?
-- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works. Or with LN2 enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works at 30fps. This advice applies to the main 1" sensor. But does it also apply to the additional Sony IMX858 sensors?
+- Select a "RAW_SENSOR" stream in the "RAW output configuration" dropdown form the MotionCam video menu button on the bottom left of the screen. ["On this specific device raw10 is for 10-bit and raw_sensor is 14-bit".](https://discord.com/channels/980884979955421255/980919883481096232/1359935901383393281). It appears the RAW10 stream is broken, except when activating the LN2, fullres or 4k120fps mod. With 4k120fps enabled, the 3840x2160 RAW10 in "Full Sensor" Capture Resolution works. With fullres enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works. Or with LN2 enabled the 4096x3072 RAW10 in "Full Sensor" Capture Resolution works at 30fps.
+- 
 - Increase "Memory usage" from default 1024Mb???? Should be no need unless you use buffer recordings.
 
 ## Recording Modes
