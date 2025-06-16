@@ -188,13 +188,35 @@ TODO: further compare 4k120fps mod with fullres mod.
 
 ## Recording Modes
 
+Note that when using 60fps the orange "Highlight clipping warning" may not work when in the ISO menu when using the "2. 24mm" and "4. 77mm" lenses. If you are unable to get 60fps working, ensure that your shutter speed is at least 1/60 or faster.
+
 ### No Mods Enabled
 
-#### 0/2. 24mm (main 1" sensor)
-- "4096x3072 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 30fps: use this for max vertical resolution
-- "4096x2304 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution" @ 60fps: use this for high fps with reduced vertical resolution
-- "4096x1840 (RAW_SENSOR)" with "Full Sensor" under "Capture Resolution": appears not to work, crashes the feed: “Error”, no use selecting this one. Also tried some other Capture Resolution with same results.
-- "4096x3072 (RAW10)": does not work (recording is black) unless using fullres mod or 4k120fps mod.
+#### "3. 13mm", "4. 77mm", "5. 122mm" (IMX858 sensors)
+| Stream                 | Bit Depth | Capture Resolution | FPS | Aspect Ratio | Notes                                                   |
+|------------------------|-----------|--------------------|-----|--------------|---------------------------------------------------------|
+| 4096x3072 (RAW_SENSOR) | 14        | Full Sensor        | 30  | 4:3          | Open gate: max vertical resolution.                     |
+| 4096x2304 (RAW_SENSOR) | 14        | Full Sensor        | 60  | 16:9         | Use this for high fps with reduced vertical resolution. |
+| 4096x3072 (RAW10)      | 10        | Full Sensor        | 30  | 4:3          | Open gate: max vertical resolution.                     |
+| 4096x2304 (RAW10)      | 10        | Full Sensor        | 60  | 16:9         | Use this for high fps with reduced vertical resolution. |
+
+#### "2. 24mm" (main 1" LYT900 sensor)
+| Stream                 | Bit Depth | Capture Resolution | FPS | Aspect Ratio | Notes                                                   |
+|------------------------|-----------|--------------------|-----|--------------|---------------------------------------------------------|
+| 4096x3072 (RAW_SENSOR) | 14        | Full Sensor        | 30  | 4:3          | Open gate: max vertical resolution.                     |
+| 4096x2304 (RAW_SENSOR) | 14        | Full Sensor        | 60  | 16:9         | Use this for high fps with reduced vertical resolution. |
+| 4096x1840 (RAW_SENSOR) | 14        | N/A                | N/A | 2.23:1       | Appears not to work. Crashes the feed: “Error”.         |
+| 4096x3072 (RAW10)      | 10        | N/A                | N/A | 4:3          | Does not work without mods (recording is black).        |
+
+### Mods Enabled
+
+#### "3. 13mm", "4. 77mm", "5. 122mm" (IMX858 sensors)
+
+There are no mods for these lenses.
+
+#### "2. 24mm" (main 1" LYT900 sensor)
+
+TODO
 
 ## Camera Grip
 
